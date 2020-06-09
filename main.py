@@ -7,7 +7,7 @@ def elephant(max_try: int, fail_answer: str, win_answer: str, counter=0, arg_num
         print(my_arguments[arg_number])
         user_answer = input('Купи слона? ')
         if user_answer in yes_list:
-            print(win_answer)
+            return win_answer
         else:
             print('Решайся!')
         return elephant(max_try, fail_answer, win_answer, counter + 1, arg_number + 1)
